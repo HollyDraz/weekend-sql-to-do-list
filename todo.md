@@ -1,13 +1,13 @@
 ## TO DO 
 - add:
-    -html 
-    -css
-    -client.js 
-    -server.js 
-    -database.sql text file
-    - add nodemon
+    x-html 
+    x-css
+    x-client.js 
+    x-server.js 
+    x-database.sql text file
+    x- add nodemon
     -routers as needed 
 
--[] Then add some html to have a skeleton for the app 
+-[x] Then add some html to have a skeleton for the app 
 -[] add click handlers where needed (complete / delete)
 -[] 
