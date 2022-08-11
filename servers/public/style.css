@@ -9,3 +9,11 @@ table, th, td {
     width: 100%;
     border: 1px solid;
   }
+
+  .default-row{
+    background-color: bisque;
+  }
+
+  .complete-row{
+    background-color: blueviolet;
+  }

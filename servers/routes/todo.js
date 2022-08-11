@@ -22,9 +22,9 @@ todoRouter.post('/', (req, res) => {
                        VALUES($1)`
     pool.query(queryText,[tasks.task])
         .then((results) => {
-            console.log(results);
+            console.log("these are my posts", results);
             res.send(results);
-        }).catch((error)=>{
+        }).catch((error) => {
             console.log("error in task post", error );
             res.sendStatus(500);
         });
