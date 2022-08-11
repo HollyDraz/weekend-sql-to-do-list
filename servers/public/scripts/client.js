@@ -11,13 +11,13 @@ function onReady(){
  * function that will call the server to show 
  * the lists
  */
-// function getList(){
-//     console.log("in getList");
-//     $.ajax({
-//         type: 'GET',
-//         url: '/list'
-//     })
-// }
+function getList(){
+    console.log("in getList");
+    $.ajax({
+        type: 'GET',
+        url: '/list'
+    })
+}
 
 function sendListToServer() {
     console.log('in send list');

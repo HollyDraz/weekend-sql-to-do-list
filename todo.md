@@ -15,10 +15,10 @@
     -[]in JS client 
         -[x]ready now function 
         -[]click handler
-        -[] send data to server
+        -[x] send data to server
     -[] Server 
-        -[] listen on port 
-        -[]router for feature 
+        -[x] listen on port 
+        -[x]router for feature 
     -[]router 
         -[] save data to database
         -[]return contents of database
