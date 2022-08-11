@@ -7,6 +7,6 @@ function onReady(){
 }
 
 
-function clickHandler(){
-    
+function getList(){
+    console.log("in get list");
 }

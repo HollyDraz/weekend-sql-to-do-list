@@ -11,9 +11,9 @@
 -[x] Then add some html to have a skeleton for the app 
 -[] add click handlers where needed (complete / delete)
 -[x] be able to get the localhost up and running properly 
--[] breakdown of how the todo list should operate:
+-[x] breakdown of how the todo list should operate:
     -[]in JS client 
-        -[]ready now function 
+        -[x]ready now function 
         -[]click handler
         -[] send data to server
     -[] Server 

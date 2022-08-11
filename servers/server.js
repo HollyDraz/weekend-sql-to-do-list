@@ -9,7 +9,10 @@ app.use(express.urlencoded({extended: true}));
 app.use('/list', todoRouter);
 
 //get 
+app.get('/list', (req, res) =>{
+    res.send("get request called");
 
+});
 //post 
 
 //put 
