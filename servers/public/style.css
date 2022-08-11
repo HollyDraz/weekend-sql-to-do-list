@@ -2,5 +2,10 @@ body {
     background-color: #E0FFFF; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
+    font-size: large;
 }
  
+table, th, td {
+    width: 100%;
+    border: 1px solid;
+  }
