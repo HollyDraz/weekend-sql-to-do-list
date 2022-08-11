@@ -26,7 +26,7 @@ if (process.env.DATABASE_URL) {
         // connect to 'my' computer
         host: 'localhost', // 127.0.0.1 is another way to say localhost, the computer that you are physically operating on
         port: 5432,
-        database: 'koala_holla', // CHANGE THIS LINE to match your local database name!
+        database: 'todo_list', // CHANGE THIS LINE to match your local database name!
     };
 }
 
