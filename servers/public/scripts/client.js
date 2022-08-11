@@ -6,10 +6,8 @@ function onReady(){
     console.log("client.js ready");
     $('#addTask').on('click',  sendListToServer);
     //sendListToServer()
-    getList()
+    getList();
 }
-
-
 
 function sendListToServer() {
     console.log('in send list');
@@ -20,7 +18,7 @@ function sendListToServer() {
         task: $('#taskToDo').val()
       }
     }).then( function (response) {
-        console.log('response');
+        console.log(response);
         getList(); // need to create, will display the list on the DOM
     }).catch( function (error) {
         console.log(error);

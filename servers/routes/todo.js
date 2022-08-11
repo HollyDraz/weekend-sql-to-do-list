@@ -7,6 +7,7 @@ const pool = require('../modules/pool.js');
 todoRouter.get('/', (req, res) => {
     let queryText = 'SELECT * FROM "list" ORDER BY "task";';
     pool.query(queryText).then((results) => {
+        console.log("success for get", results )
         res.send(results.rows);
     }).catch((error) => {
         console.log('error in list GET', error);

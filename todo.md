@@ -22,4 +22,7 @@
     -[]router 
         -[] save data to database
         -[]return contents of database
+
+    -[]have /get work properly
+    
     
