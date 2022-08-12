@@ -37,9 +37,9 @@ function getList(){
         $('#viewListTable').empty();
         for(let i =0; i < response.length; i++) {
             let newTask = response[i];
-            let rowClass = "default-row"
-            if (newTask.complete){
-                rowClass = "complete-row"
+            let rowClass = "default-row";
+            if (newTask.complete === true ){
+                rowClass = "complete-row";
             }
             $('#viewListTable').append(`
                 <tr class="${rowClass}">
@@ -58,18 +58,14 @@ function getList(){
 
 
 function completeTask(){
-    console.log("task is done!");
     const taskId = $(this).data('id');
     console.log('task is done', taskId);
     $.ajax({
         type: 'PUT',
-        url: `/list/${taskId}`,
-        data: { 
-            task: 'New task'
-        } 
+        url: `/list/${taskId}`
     }).then(function(response){
         console.log("response in complete function", response)
-        getTask();
+        getList();
     }).catch(function(error) {
         console.log(error);
         alert('Something went wrong in the complete task');

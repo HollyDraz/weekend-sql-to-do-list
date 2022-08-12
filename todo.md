@@ -26,9 +26,9 @@
     -[x] make a delete function in client js 
     -[x]create a router.delete in todo router 
     -[x] need to get the delete button working 
-    -[] get complete button and when button is clicked bg of task is a different color 
-    -[] add put router
-    -[]
+    -[x] get complete button and when button is clicked bg of task is a different color 
+    -[x] add put router
+
 
     -[] add styling as desired 
     -[] finish description page for submission 
