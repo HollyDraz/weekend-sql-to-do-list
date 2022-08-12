@@ -1,44 +1,41 @@
-# Project Name
+# Project Name Weekend-sql-to-list
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description:
-[]Your project description goes here. What problem did you solve? How did you solve it?
+The todo app will allow the user to create a task with any title. The user may also chose to check off completed tasks which will then change color to show the task is completed. User also has the option to remove a task entirely. 
 
 ## Prerequisites:
-[]Link to software that is required to install the app (e.g. node).
-Node.js
-List other prerequisites here
+[]Node.js https://nodejs.org/en/
+
 
 
 ## Installation:
-How do you get your application up and running? This is a step by step list for how another developer could get this project up and running. The good target audience in terms of knowledge, would be a fellow Primer from another cohort being able to spin up this project. Note that you do not need a paragraph here to intro Installation. It should be step-by-step.
-
-Create a database named your database name,
-The queries in the tables.sql file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on Postgres, so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries,
-Open up your editor of choice and run an npm install
 Run npm run server in your terminal
 Run npm run client in your terminal
 The npm run client command will open up a new browser tab for you!
+From there reference the database.sql file and copy paste that into postico
 
 ## Usage:
 How does someone use this application? Tell a user story here.
 
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
+1. After installation is complete and server is set up user can begin by observing the page
+2. Navigate to the task bar and insert a task user wishes to complete
+3. Once the task is written - click the add task button 
+4. User can observe the task was now added to the page 
+5. User then has the option of clicking delete or complete that appears on the same row for the allotted task
+6. When user clicks the complete button the background of the specific task will change 
+7. If user wants to remove a task from their database and list the delete button will accomplish that 
+
+
 
 ## Built With:
-List technologies and frameworks here
+-Java script 
+-node.js 
+-styling with css 
 
 ## Acknowledgement:
 Thanks to Prime Digital Academy who equipped and helped me to make this application a reality. 
 
-## Support:
-If you have suggestions or issues, please email me at youremail@whatever.com
 
 
 
