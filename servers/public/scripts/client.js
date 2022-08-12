@@ -58,3 +58,18 @@ function getList(){
         alert('something is wrong in the get function');
     })
 }
+
+function deleteTask(){
+    const taskId = $(this).data('id');
+    console.log(taskId);
+    $.ajax({
+        type:'DELETE',
+        url:`/task/${taskId}`
+    }).then(function(response){
+        console.log("this is the delete response", response);
+        getList();
+    }).catch(function(error){
+        console.log("error in delete", error );
+        alert('something wrong with the delete');
+    })
+}

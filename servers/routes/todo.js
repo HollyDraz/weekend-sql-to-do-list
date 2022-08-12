@@ -35,6 +35,18 @@ todoRouter.post('/', (req, res) => {
 
 
 //delete 
+router.delete('/:id', (req, res) => {
+    const taskId = req.params.id;
+    console.log('DELETE /task', taskId);
+    const queryText = `DELETE FROM "task"
+                       WHERE "id" = $1`;
+    pool.query(queryText, [taskId])
+        .then((results) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            res.sendStatus(500);
+        })
+});
 
 
 //export to server.js 
