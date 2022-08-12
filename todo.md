@@ -12,17 +12,19 @@
 -[] add click handlers where needed (complete / delete)
 -[x] be able to get the localhost up and running properly 
 -[x] breakdown of how the todo list should operate:
-    -[]in JS client 
+    -[x]in JS client 
         -[x]ready now function 
         -[]click handler
         -[x] send data to server
-    -[] Server 
+    -[x] Server 
         -[x] listen on port 
         -[x]router for feature 
-    -[]router 
-        -[] save data to database
-        -[]return contents of database
+    -[x]router 
+        -[x] save data to database
+        -[x]return contents of database
+        -[x] have /get work properly
+    -[] need to get the delete button working 
+    -[] get complete button and when button is clicked bg of task is a different color 
 
-    -[]have /get work properly
-    
+
     

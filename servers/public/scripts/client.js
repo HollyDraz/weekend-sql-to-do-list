@@ -46,6 +46,9 @@ function getList(){
             $('#viewListTable').append(`
                 <tr class="${rowClass}">
                 <td>${newTask.task}</td>
+                <td> <button class="task-delete" data-id="${newTask.id}"> delete </button>
+                     <button class="task-complete" data-id="${newTask.id}"> complete </button>
+                </td> 
                 </tr>
             
             `);
