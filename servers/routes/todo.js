@@ -35,10 +35,10 @@ todoRouter.post('/', (req, res) => {
 
 
 //delete 
-router.delete('/:id', (req, res) => {
+todoRouter.delete('/:id', (req, res) => {
     const taskId = req.params.id;
-    console.log('DELETE /task', taskId);
-    const queryText = `DELETE FROM "task"
+    console.log('DELETE /list', taskId);
+    const queryText = `DELETE FROM "list"
                        WHERE "id" = $1`;
     pool.query(queryText, [taskId])
         .then((results) => {

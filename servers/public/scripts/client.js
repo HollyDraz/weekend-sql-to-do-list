@@ -5,6 +5,7 @@ $(document).ready(onReady);
 function onReady(){
     console.log("client.js ready");
     $('#addTask').on('click',  sendListToServer);
+    $('body').on('click', '.task-delete', deleteTask);
     //sendListToServer()
     getList();
 }
@@ -15,8 +16,7 @@ function sendListToServer() {
       type: 'POST',
       url: '/list',
       data: {
-        task: $('#taskToDo').val()
-
+      task: $('#taskToDo').val()
       }
     }).then( function (response) {
         console.log(response);
@@ -61,10 +61,10 @@ function getList(){
 
 function deleteTask(){
     const taskId = $(this).data('id');
-    console.log(taskId);
+    console.log("this is the task id", taskId);
     $.ajax({
         type:'DELETE',
-        url:`/task/${taskId}`
+        url:`/list/${taskId}`
     }).then(function(response){
         console.log("this is the delete response", response);
         getList();
