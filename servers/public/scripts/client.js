@@ -6,7 +6,7 @@ function onReady(){
     console.log("client.js ready");
     $('#addTask').on('click',  sendListToServer);
     $('body').on('click', '.task-delete', deleteTask);
-    //sendListToServer()
+    $('body').on('click', '.task-complete', completeTask);
     getList();
 }
 
@@ -26,8 +26,6 @@ function sendListToServer() {
         alert('Something went wrong in post. Please try again.');
     });
   }
-
-
 
 function getList(){
     console.log("in getList");
@@ -50,14 +48,34 @@ function getList(){
                      <button class="task-complete" data-id="${newTask.id}"> complete </button>
                 </td> 
                 </tr>
-            
             `);
-        }//add styling in here 
+        } 
     }).catch(function (error) {
         console.log("getList error", error);
         alert('something is wrong in the get function');
     })
 }
+
+
+function completeTask(){
+    console.log("task is done!");
+    const taskId = $(this).data('id');
+    console.log('task is done', taskId);
+    $.ajax({
+        type: 'PUT',
+        url: `/list/${taskId}`,
+        data: { 
+            task: 'New task'
+        } 
+    }).then(function(response){
+        console.log("response in complete function", response)
+        getTask();
+    }).catch(function(error) {
+        console.log(error);
+        alert('Something went wrong in the complete task');
+    })
+}
+
 
 function deleteTask(){
     const taskId = $(this).data('id');
@@ -71,5 +89,5 @@ function deleteTask(){
     }).catch(function(error){
         console.log("error in delete", error );
         alert('something wrong with the delete');
-    })
+     })
 }

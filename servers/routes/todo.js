@@ -31,6 +31,18 @@ todoRouter.post('/', (req, res) => {
 });
 
 //put 
+todoRouter.put('/:id', (req, res) => {
+    const taskId = req.params.id;
+    console.log(req.body); // data from client
+    const queryText = `UPDATE "list"
+                       WHERE "complete" = $1;`;
+    pool.query(queryText, [taskId])
+        .then((results) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            res.sendStatus(500);
+        })
+});
 
 
 

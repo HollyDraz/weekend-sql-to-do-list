@@ -23,10 +23,15 @@
         -[x] save data to database
         -[x]return contents of database
         -[x] have /get work properly
-    -[] make a delete function in client js 
-    -[]create a router.delete in todo router 
-    -[] need to get the delete button working 
+    -[x] make a delete function in client js 
+    -[x]create a router.delete in todo router 
+    -[x] need to get the delete button working 
     -[] get complete button and when button is clicked bg of task is a different color 
+    -[] add put router
+    -[]
+
+    -[] add styling as desired 
+    -[] finish description page for submission 
 
 
     
