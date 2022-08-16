@@ -6,6 +6,10 @@ body {
 }
 
 
+
+input{
+  text-align: center;
+}
  
 table, th, td {
     width: 100%;
