@@ -1,9 +1,11 @@
 body {
-    background-color: 	#E0FFFF;
+    background-image: url(https://i.pinimg.com/564x/a7/0c/b0/a70cb09e3252076838754f35329cd0f4.jpg);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-size: large;
 }
+
+
  
 table, th, td {
     width: 100%;
@@ -11,11 +13,11 @@ table, th, td {
   }
 
   .default-row{
-    background-color: bisque;
+    background-color: #FFF0F5;
   }
 
   .complete-row{
-    background-color: blueviolet;
+    background-color: 	#7FFFD4;
   }
 
   .pixelart-to-css {
